@@ -2,7 +2,20 @@ import React from 'react';
 
 const EntryLog = () => {
     return (
-        <h1>EntryLog</h1>
+        <>
+            <h2>Entry Log</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Actor</th>
+                        <th>Connection</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                </tbody>
+            </table>
+        </>
     )
 }
 
