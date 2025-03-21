@@ -42,7 +42,7 @@ const EntryInput = () => {
             <h2>EntryInput</h2>
             <form id="dataForm" onSubmit={handleSubmit}>
                 <input
-                    style={{ backgroundColor: 'white', color: 'black' }}
+                    style={{ backgroundColor: 'white', color: 'black', height: "30px" }}
                     type="text"
                     value={name}
                     onChange={(e) => {
@@ -53,7 +53,7 @@ const EntryInput = () => {
                     required
                 />
                 <input
-                    style={{ backgroundColor: 'white', color: 'black' }}
+                    style={{ backgroundColor: 'white', color: 'black', height: "30px" }}
                     type="text"
                     value={actor}
                     onChange={(e) => setActor(e.target.value)}
@@ -62,7 +62,7 @@ const EntryInput = () => {
                     required
                 />
                 <input
-                    style={{ backgroundColor: 'white', color: 'black' }}
+                    style={{ backgroundColor: 'white', color: 'black', height: "30px" }}
                     type="text"
                     value={connection}
                     onChange={(e) => setConnection(e.target.value)}
