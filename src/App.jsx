@@ -3,18 +3,18 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
-import Header from './header'
-import Intro from './intro'
-import Rules from './rules'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Welcome from './welcome'
+import ActorWeb from './actorWeb'
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <Intro />
-      <Rules />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/actorWeb" element={<ActorWeb />} />
+      </Routes>
+    </Router>
   )
 }
 
