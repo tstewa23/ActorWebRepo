@@ -4,8 +4,8 @@
 import './App.css'
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Welcome from './welcome'
-import ActorWeb from './actorWeb'
+import Welcome from './rWelcome'
+import ActorWeb from './rActorWeb'
 
 function App() {
   return (

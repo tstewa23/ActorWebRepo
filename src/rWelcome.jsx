@@ -4,19 +4,20 @@
 import './App.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Header from './header'
-import Intro from './intro'
-import Rules from './rules'
+import Header from './components/header'
+import Intro from './components/intro'
+import Rules from './components/rules'
 
-function ActorWeb() {
+function Welcome() {
 
   return (
     <>
       <Header />
       <Intro />
       <Rules />
+      <Link to="/actorWeb">Web Actor</Link>
     </>
   )
 }
 
-export default ActorWeb
+export default Welcome
