@@ -15,7 +15,7 @@ function Welcome() {
       <Header />
       <Intro />
       <Rules />
-      <Link to="/actorWeb">Web Actor</Link>
+      <Link style={{ backgroundColor: 'black', padding: '10px' }} to="/actorWeb">Web Actor</Link>
     </>
   )
 }

@@ -31,7 +31,7 @@ const EntryLog = () => {
     return (
         <>
             <h2>Entry Log</h2>
-            <table border="1">
+            <table style={{ width: '100%' }} border='1'>
                 <thead>
                     <tr>
                         <th>Name</th>
