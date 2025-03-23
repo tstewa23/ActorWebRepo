@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './entry.css'
 
 const EntryInput = () => {
     const [name, setName] = useState('');
@@ -38,8 +39,8 @@ const EntryInput = () => {
 
 
     return (
-        <>
-            <h2>EntryInput</h2>
+        <section className='input box'>
+            <h2>Your Connection</h2>
             <form id="dataForm" onSubmit={handleSubmit}>
                 <input
                     style={{ backgroundColor: 'white', color: 'black', height: "30px" }}
@@ -72,7 +73,7 @@ const EntryInput = () => {
                 />
                 <button type="submit">Submit</button>
             </form>
-        </>
+        </section>
     )
 }
 

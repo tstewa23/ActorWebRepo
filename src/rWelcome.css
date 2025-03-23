@@ -1,0 +1,26 @@
+.welcome {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.welcome * {
+    margin: 0 auto;
+    flex-basis: fit-content;
+}
+
+a {
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0);
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+.rules,
+.intro {
+    width: 60%;
+    background-color: #574523;
+}

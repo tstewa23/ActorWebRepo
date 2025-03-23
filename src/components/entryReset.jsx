@@ -1,4 +1,5 @@
 import React from 'react';
+import './entry.css'
 
 const EntryReset = () => {
     const resetDB = async () => {
@@ -19,10 +20,10 @@ const EntryReset = () => {
     }
 
     return (
-        <>
+        <section className='reset'>
             <p id="responseMessage"></p>
-            <button onClick={resetDB} id="myButton">reset</button>
-        </>
+            <button onClick={resetDB} id="myButton">Reset</button>
+        </section>
     )
 }
 

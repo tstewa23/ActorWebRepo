@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
+import './entry.css'
 
 const EntryLog = () => {
     const [data, setData] = useState([])
@@ -29,27 +30,27 @@ const EntryLog = () => {
     }, []);
 
     return (
-        <>
-            <h2>Entry Log</h2>
-            <table style={{ width: '100%' }} border='1'>
+        <section className='log box'>
+            <h2>Connections so far</h2>
+            <table className="result-table">
                 <thead>
-                    <tr>
+                    {/* <tr>
                         <th>Name</th>
                         <th>Actor</th>
                         <th>Connection</th>
-                    </tr>
+                    </tr> */}
                 </thead>
                 <tbody id="dataTable">
                     {data.length === 0 ? (
                         <tr><td colSpan="3">No data available</td></tr>
                     ) : data.map(item => (
-                        <tr>
-                            <td>{item.name}</td><td>{item.actor}</td><td>{item.connection}</td>
+                        <tr className='rowFlex'>
+                            <td className='username'>{item.name}:</td><td>{item.actor} in</td><td>{item.connection}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-        </>
+        </section>
     )
 }
 

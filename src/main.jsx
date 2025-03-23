@@ -11,3 +11,6 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>
 );
+
+//basename="/ActorWebRepo/">
+// add to BrowserRouter

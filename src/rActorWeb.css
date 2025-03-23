@@ -1,0 +1,18 @@
+.actor-web {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.actor-web * {
+    margin: 0 auto;
+    flex-basis: fit-content;
+}
+
+.log,
+.input {
+    width: 60%;
+    background-color: #574523 !important;
+}

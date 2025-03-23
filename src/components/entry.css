@@ -1,0 +1,31 @@
+.box {
+    background-color: #0f320d;
+    border: 3px solid #131212;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0);
+    height: fit-content;
+    padding: 0.6em 1.2em;
+}
+
+.result-table {
+    background-color: #282828;
+    border: 2px solid #121212;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 150px;
+}
+
+.rowFlex {
+    display: flex;
+}
+
+.rowFlex * {
+    flex-basis: fit-content;
+    text-align: left;
+    margin: 0;
+}
+
+.username {
+    color: #BB86FC;
+    margin-right: 5px !important;
+}

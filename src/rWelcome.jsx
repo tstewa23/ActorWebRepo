@@ -1,22 +1,20 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from './components/header'
 import Intro from './components/intro'
 import Rules from './components/rules'
+import './rWelcome.css'
 
 function Welcome() {
 
   return (
-    <>
+    <section className='welcome'>
       <Header />
       <Intro />
       <Rules />
-      <Link style={{ backgroundColor: 'black', padding: '10px' }} to="/actorWeb">Web Actor</Link>
-    </>
+      <Link to="/actorWeb">Start</Link>
+    </section>
   )
 }
 
