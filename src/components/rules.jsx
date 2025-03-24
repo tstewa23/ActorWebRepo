@@ -3,9 +3,9 @@ import './textbox.css'
 
 const Rules = () => {
     return (
-        <div className="textbox rules">
+        <section className="textbox rules">
             <h2>Rules</h2>
-            <ul>
+            <ul className='pList'>
                 <p>-You have to use the cast lists on google</p>
                 <p>-Even if you know someone is in a movie, they have to be on the google list to count</p>
                 <p>-You can't google anyone except for the last link of the chain</p>
@@ -14,7 +14,7 @@ const Rules = () => {
                 <p>-You can't google the final person to see what they are in</p>
                 <p>-You can have repeats but you have to connect back to them</p>
             </ul>
-        </div>
+        </section>
     )
 }
 

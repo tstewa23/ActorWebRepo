@@ -36,24 +36,26 @@ const EntryLog = () => {
         <section className='log box'>
             <h3>Connections so far:</h3>
             <p>count: {count}</p>
-            <table className="result-table">
-                <thead>
-                    {/* <tr>
-                        <th>Name</th>
-                        <th>Actor</th>
-                        <th>Connection</th>
-                    </tr> */}
-                </thead>
-                <tbody id="dataTable">
-                    {data.length === 0 ? (
-                        <tr><td colSpan="3">No data available</td></tr>
-                    ) : data.map((item, index) => (
-                        <tr className='rowFlex' key={index}>
-                            <td className='username'>{item.name}:</td><td>{item.actor} in</td><td>{item.connection}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <section className='tableWrap'>
+                <table className="result-table">
+                    <thead>
+                        {/* <tr>
+                            <th>Name</th>
+                            <th>Actor</th>
+                            <th>Connection</th>
+                        </tr> */}
+                    </thead>
+                    <tbody id="dataTable">
+                        {data.length === 0 ? (
+                            <tr><td colSpan="3">No data available</td></tr>
+                        ) : data.map((item, index) => (
+                            <tr className='rowFlex' key={index}>
+                                <td className='username'>{item.name}:</td><td>{item.actor} in</td><td>{item.connection}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </section>
         </section>
     )
 }

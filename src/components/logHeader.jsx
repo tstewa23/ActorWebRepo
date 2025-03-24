@@ -9,7 +9,7 @@ const LogHeader = () => {
     const [headerDisplay, setHeaderDisplay] = useState('none')
 
     return (
-        <section className='textbox'>
+        <section className='textbox actors'>
             <h2 style={{ display: headerDisplay }}> {actor1} to {actor2}
                 {/* <button className='headerButton' onClick={() => {
                     setFormDisplay('block')
